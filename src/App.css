@@ -1,55 +1,52 @@
 body {
   margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-  padding: 50px;
+  width: 400px;
+  margin: 50px auto;
 }
 
-h1 {
-  color: #495E57;
-  font-size: 50px;
-  margin-bottom: 10px;
+header h1 {
+  color: #495e57;
+  font-size: 48px;
 }
 
-h2 {
-  color: #F4CE14;
-  margin-bottom: 30px;
+header h2 {
+  color: #f4ce14;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 400px;
   gap: 15px;
 }
 
-label {
-  font-size: 22px;
-  font-weight: bold;
-}
-
 input,
-select {
+select,
+button {
   padding: 12px;
-  font-size: 18px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid gray;
 }
 
 button {
-  background-color: #495E57;
+  background-color: #495e57;
   color: white;
-  padding: 15px;
   border: none;
-  border-radius: 6px;
-  font-size: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #3d504a;
+  background-color: #354842;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+  }
+
 }
